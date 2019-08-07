@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'todolists/new'
-  
+
 get 'top' => 'root#top'
 
 post 'todolists' => 'todolists#create'
@@ -13,5 +13,6 @@ get 'todolists/:id/edit' => 'todolists#edit', as: 'edit_todolist'
 
 patch 'todolists/:id' => 'todolists#update', as: 'update_todolist'
 
+get 'todolists/:id/edit' => 'todolists#edit', as: 'edit_todolist'
 
 end
